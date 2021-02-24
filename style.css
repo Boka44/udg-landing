@@ -6,6 +6,10 @@
   font-size: 48px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1, h2, h3 {
   color: #6E50B9;
 }
@@ -133,5 +137,31 @@ input {
   #work-with-us .box-container .box:first-child {
     padding-right: 0px;
     padding-bottom: 60px;
+  }
+}
+
+#who-we-are div {
+  text-align: center;
+  width: 100%;
+}
+#who-we-are div img {
+  width: 60%;
+}
+@media screen and (max-width: 1000px) {
+  #who-we-are div img {
+    width: 100%;
+  }
+}
+
+#where-we-are div {
+  text-align: center;
+  width: 100%;
+}
+#where-we-are div img {
+  width: 60%;
+}
+@media screen and (max-width: 1000px) {
+  #where-we-are div img {
+    width: 100%;
   }
 }
