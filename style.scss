@@ -1,0 +1,151 @@
+// sass --watch --no-source-map style.scss style.css 
+
+$primary-color: #22333B;
+$accent-color: #6E50B9;
+$black: #141414;
+$white: #f2f4f3;
+$color: $black;
+
+.material-icons.accent { 
+    color: $accent-color; 
+}
+
+.material-icons.md-48 { 
+    font-size: 48px;
+}
+
+h1, h2, h3 {
+    color: $accent-color;
+}
+
+section {
+    // margin-top: 100px;
+    // margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+button {
+    border-radius: 20px !important;
+    background-color: $accent-color !important;
+    color: $white !important;
+    text-decoration: none;
+    padding: 4px 10px 4px 10px !important;
+}
+
+input {
+    border-radius: 20px !important;
+    width: 300px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.white-text {
+    color: $white !important;
+}
+
+.primary-text {
+    color: $primary-color !important;
+}
+
+.lg-text {
+    font-size: 24px;
+}
+
+.navbar-dark {
+    background-color: $primary-color !important;
+}
+
+.bg-dark {
+    background-color: $primary-color !important;
+}
+
+.bg-img {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.header-img {
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: -260px;
+    
+    @media (max-width: 991px) {
+        // margin-top: -100px;
+        margin-top: 0px;
+    }
+}
+
+.circle-icon {
+    padding:30px;
+    border-radius: 50%;
+    border: 3px $accent-color solid;
+}
+
+.inverted-bg {
+    background-color: $primary-color;
+}
+
+#qualify {
+    width: 100%;
+    height: 1000px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://udg-static-media.s3-us-west-1.amazonaws.com/girls-on-phones.jpg');
+    background-position: center center;
+    padding-top: 300px !important;
+
+    @media (max-width: 991px) {
+        padding-top: 2 00px !important;
+    }
+}
+
+#what-is-section {
+    h1 {
+        margin-bottom: 20px;
+    }
+}
+
+#join-team {
+    #form-container {
+        display: inline-flex;
+        margin-bottom: 40px;
+        margin-left: -45px;
+
+        p {
+            margin: 0;
+            line-height: 2;
+
+            @media (max-width: 991px) {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            display: block;
+            margin-left: 0px;
+        }
+    }
+}
+
+#work-with-us {
+    .box-container {
+        display: inline-flex;
+
+        @media (max-width: 991px) {
+            // margin-top: -100px;
+            display: block;
+        }
+        
+        .box:first-child{
+            padding-right: 200px;
+
+            @media (max-width: 991px) {
+                padding-right: 0px;
+                padding-bottom: 60px;
+            }
+        }
+     }
+ }
