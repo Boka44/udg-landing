@@ -27,6 +27,7 @@ section {
     // margin-bottom: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
+    min-height: 500px;
 }
 
 button {
@@ -35,6 +36,14 @@ button {
     color: $white !important;
     text-decoration: none;
     padding: 4px 10px 4px 10px !important;
+}
+
+.btn-inherit {
+    border-radius: inherit !important;
+    background-color: inherit !important;
+    color: inherit !important;
+    text-decoration: inherit;
+    padding: inherit !important;
 }
 
 input {
@@ -112,7 +121,38 @@ input {
     }
 }
 
+#who-we-are {
+    div {
+       text-align: center;
+       width: 100%;
+
+        img {
+            width: 60%;
+
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#where-we-are {
+   div {
+      text-align: center;
+      width: 100%;
+
+       img {
+           width: 60%;
+
+           @media screen and (max-width: 1000px) {
+               width: 100%;
+           }
+       }
+   }
+}
+
 #join-team {
+    padding-top: 125px !important;
     #form-container {
         display: inline-flex;
         margin-bottom: 40px;
@@ -135,6 +175,7 @@ input {
 }
 
 #work-with-us {
+    padding-top: 125px !important;
     .box-container {
         display: inline-flex;
 
@@ -153,33 +194,3 @@ input {
         }
      }
  }
-
- #who-we-are {
-     div {
-        text-align: center;
-        width: 100%;
-
-         img {
-             width: 60%;
-
-             @media screen and (max-width: 1000px) {
-                 width: 100%;
-             }
-         }
-     }
- }
-
- #where-we-are {
-    div {
-       text-align: center;
-       width: 100%;
-
-        img {
-            width: 60%;
-
-            @media screen and (max-width: 1000px) {
-                width: 100%;
-            }
-        }
-    }
-}

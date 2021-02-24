@@ -17,6 +17,7 @@ h1, h2, h3 {
 section {
   padding-top: 100px;
   padding-bottom: 100px;
+  min-height: 500px;
 }
 
 button {
@@ -25,6 +26,14 @@ button {
   color: #f2f4f3 !important;
   text-decoration: none;
   padding: 4px 10px 4px 10px !important;
+}
+
+.btn-inherit {
+  border-radius: inherit !important;
+  background-color: inherit !important;
+  color: inherit !important;
+  text-decoration: inherit;
+  padding: inherit !important;
 }
 
 input {
@@ -101,45 +110,6 @@ input {
   margin-bottom: 20px;
 }
 
-#join-team #form-container {
-  display: inline-flex;
-  margin-bottom: 40px;
-  margin-left: -45px;
-}
-#join-team #form-container p {
-  margin: 0;
-  line-height: 2;
-}
-@media (max-width: 991px) {
-  #join-team #form-container p {
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 991px) {
-  #join-team #form-container {
-    display: block;
-    margin-left: 0px;
-  }
-}
-
-#work-with-us .box-container {
-  display: inline-flex;
-}
-@media (max-width: 991px) {
-  #work-with-us .box-container {
-    display: block;
-  }
-}
-#work-with-us .box-container .box:first-child {
-  padding-right: 200px;
-}
-@media (max-width: 991px) {
-  #work-with-us .box-container .box:first-child {
-    padding-right: 0px;
-    padding-bottom: 60px;
-  }
-}
-
 #who-we-are div {
   text-align: center;
   width: 100%;
@@ -163,5 +133,50 @@ input {
 @media screen and (max-width: 1000px) {
   #where-we-are div img {
     width: 100%;
+  }
+}
+
+#join-team {
+  padding-top: 125px !important;
+}
+#join-team #form-container {
+  display: inline-flex;
+  margin-bottom: 40px;
+  margin-left: -45px;
+}
+#join-team #form-container p {
+  margin: 0;
+  line-height: 2;
+}
+@media (max-width: 991px) {
+  #join-team #form-container p {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  #join-team #form-container {
+    display: block;
+    margin-left: 0px;
+  }
+}
+
+#work-with-us {
+  padding-top: 125px !important;
+}
+#work-with-us .box-container {
+  display: inline-flex;
+}
+@media (max-width: 991px) {
+  #work-with-us .box-container {
+    display: block;
+  }
+}
+#work-with-us .box-container .box:first-child {
+  padding-right: 200px;
+}
+@media (max-width: 991px) {
+  #work-with-us .box-container .box:first-child {
+    padding-right: 0px;
+    padding-bottom: 60px;
   }
 }
