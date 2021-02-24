@@ -14,6 +14,10 @@ $color: $black;
     font-size: 48px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     overflow-x: hidden;
 }
@@ -101,6 +105,22 @@ input {
 
 .inverted-bg {
     background-color: $primary-color;
+}
+
+.navbar {
+    img {
+        height: 85px;
+        @media (max-width: 991px) {
+            height: 60px;
+        }
+    }
+    a {
+        font-size: 24px;
+    }
+}
+
+#hero {
+    min-height: 0px !important;
 }
 
 #qualify {
