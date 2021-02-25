@@ -129,10 +129,10 @@ input {
     height: 1000px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://udg-static-media.s3-us-west-1.amazonaws.com/girls-on-phones.jpg');
     background-position: center center;
-    padding-top: 300px !important;
+    padding-top: 300px;
 
     @media (max-width: 991px) {
-        padding-top: 2 00px !important;
+        padding-top: 200px !important;
     }
 }
 
