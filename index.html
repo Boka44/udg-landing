@@ -220,7 +220,6 @@
         <script>
           const navLinks = document.querySelectorAll('.nav-item')
           const menuToggle = document.getElementById('navbarSupportedContent')
-          const bsCollapse = new bootstrap.Collapse(menuToggle)
           const pageWidth  = document.documentElement.scrollWidth;
           let mobileNav = false;
           if(pageWidth < 1000) {
@@ -230,6 +229,7 @@
           navLinks.forEach((l) => {
               l.addEventListener('click', () => { 
                 if(mobileNav) {
+                  const bsCollapse = new bootstrap.Collapse(menuToggle);
                   bsCollapse.toggle() 
                 }
               })
