@@ -20,22 +20,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                      <a class="nav-link"  href="#what-is-section">What is UDG</a>
+                      <a class="nav-link"  href="#what-is-section" onclick="return scrollToTarget('what-is-section')">What is UDG</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#qualify">Qualify</a>
+                      <a class="nav-link" href="#qualify" onclick="return scrollToTarget('qualify')">Qualify</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#portfolio">Portfolio</a>
+                      <a class="nav-link" href="#portfolio" onclick="return scrollToTarget('portfolio')">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#who-we-are">Who We Are</a>
+                      <a class="nav-link" href="#who-we-are" onclick="return scrollToTarget('who-we-are')">Who We Are</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#where-we-are">Where We Are</a>
+                      <a class="nav-link" href="#where-we-are" onclick="return scrollToTarget('where-we-are')">Where We Are</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#join-team">Join Us</a>
+                      <a class="nav-link" href="#join-team" onclick="return scrollToTarget('join-team')">Join Us</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -242,7 +242,23 @@
               mobileNav = false;
             }
           })
-          
+
+          function scrollToTarget(id){
+              var element = document.getElementById(id);
+              var navHeight = document.getElementById('navbar').offsetHeight 
+              console.log(navHeight);
+              var headerOffset = navHeight;
+              var elementPosition = element.offsetTop;
+              var offsetPosition = elementPosition - headerOffset;
+
+              window.scrollTo({
+                  top: offsetPosition,
+                  behavior: "smooth"
+              });
+
+              return false;
+          }
+                    
         </script>
     </body>
 </html>
